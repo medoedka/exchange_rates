@@ -10,7 +10,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name('path_to_credenti
 googlesheet = gspread.authorize(credentials)
 worksheets = googlesheet.open("name_of_worksheet").sheet1
 
-# текущая дата (день/месяц/год)
+# текущая дата
 today = datetime.datetime.now()
 
 # получение данных с российского центробанка и запись данных в переменные
